@@ -32,9 +32,17 @@ box.forEach((box) => {
     });    
 });
 
+const disableBoxes = () =>{
+    for(let boxes of box){
+        boxes.disable = true ;
+    
+    }
+}
+
 const showWinner = (winner) => {
     msg.innerText = `Congratulation Winner is: ${winner}`;
     msgContainer.classList.remove("hide");
+    disableBoxe();
 };
 
 const checkWinner = () => {
