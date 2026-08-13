@@ -59,8 +59,8 @@ choices.forEach((choice) => {
 });
 
 resetBtn.addEventListener("click", () => {
-  userScore = 0 ;
-  compUser = 0;
+  userScore = 0;
+  compScore = 0;
 
   userScorePara.innerText = userScore;
   compScorePara.innerText = compScore;
