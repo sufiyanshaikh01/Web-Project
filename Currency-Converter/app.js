@@ -1,4 +1,6 @@
-const BASE_URL = "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies";
+const BASE_URL =
+  "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies.nds.json";
+
 const dropdowns = document.querySelectorAll(".dropdown select");
 const btn = document.querySelector("form button");
 const fromCurr = document.querySelector(".from select");
@@ -30,13 +32,25 @@ const updateExchangeRate = async () => {
     amtVal = 1;
     amount.value = "1";
   }
-  const URL = `${BASE_URL}/${fromCurr.value.toLowerCase()}/${toCurr.value.toLowerCase()}.json`;
-  let response = await fetch(URL);
-  let data = await response.json();
-  let rate = data[toCurr.value.toLowerCase()];
 
-  let finalAmount = amtVal * rate;
-  msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
+  const URL = `${BASE_URL}/${fromCurr.value.toLowerCase()}.json`;
+  try {
+    let response = await fetch(URL);
+    if (!response.ok) {
+      throw new Error(`Failed to fetch exchange rates (Status: ${response.status})`);
+    }
+    
+    let data = await response.json();
+    let fromCode = fromCurr.value.toLowerCase();
+    let toCode = toCurr.value.toLowerCase();
+    let rate = data[fromCode][toCode];
+
+    let finalAmount = (amtVal * rate).toFixed(2);
+    msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
+  } catch (error) {
+    console.error("Error updating exchange rate:", error);
+    msg.innerText = "Error fetching exchange rate. Please try again later.";
+  }
 };
 
 const updateFlag = (element) => {
