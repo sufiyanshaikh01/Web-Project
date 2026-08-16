@@ -1,5 +1,5 @@
 const BASE_URL =
-  "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies.json";
+  "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies";
 
 const dropdowns = document.querySelectorAll(".dropdown select");
 const btn = document.querySelector("form button");
@@ -39,12 +39,10 @@ const updateExchangeRate = async () => {
     if (!response.ok) {
       throw new Error(`Failed to fetch exchange rates (Status: ${response.status})`);
     }
-    
     let data = await response.json();
     let fromCode = fromCurr.value.toLowerCase();
     let toCode = toCurr.value.toLowerCase();
     let rate = data[fromCode][toCode];
-
     let finalAmount = (amtVal * rate).toFixed(2);
     msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
   } catch (error) {
