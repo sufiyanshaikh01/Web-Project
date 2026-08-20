@@ -6,3 +6,10 @@ Welcome to my repository! I am currently learning **Web Development** and have s
 
 * **Frontend:** HTML5, CSS3, JavaScript (ES6+) <br>
 * **Concepts Implemented:** DOM Manipulation, Event Handling, Async/Await, API Integration, Array Methods, and Conditional Logic.<br>
+
+# 📂 Projects Overview <br>
+
+### 1. 🪙 Currency Converter<br>
+A real-time currency conversion tool that fetches data from an API to provide accurate exchange rates.<br>
+
+* **Key Learning:** Learned how to use `fetch()` API, handle asynchronous JavaScript, and dynamically update the DOM with external data.<br>
