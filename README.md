@@ -16,3 +16,7 @@ A real-time currency conversion tool that fetches data from an API to provide ac
 ### 2. 🪨 Paper-Rock-Scissors<br>
 A fun, interactive version of the classic hand game. <br>
 * **Key Learning:** Practiced random number generation (`Math.random()`), conditional logic, and state management (score tracking).<br>
+
+### 3. ❌ Tic-Tac-Toe (XOX)<br>
+The classic board game built for two players.<br>
+* **Key Learning:** Mastered grid layouts, event listeners for user interaction, and implementing game-winning algorithms to check board states.<br>
