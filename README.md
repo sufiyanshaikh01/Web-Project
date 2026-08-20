@@ -20,3 +20,6 @@ A fun, interactive version of the classic hand game. <br>
 ### 3. ❌ Tic-Tac-Toe (XOX)<br>
 The classic board game built for two players.<br>
 * **Key Learning:** Mastered grid layouts, event listeners for user interaction, and implementing game-winning algorithms to check board states.<br>
+
+## 📈 Learning Progress<br>
+I have focused on building a strong foundation in JavaScript by:<br>
