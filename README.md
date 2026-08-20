@@ -23,3 +23,6 @@ The classic board game built for two players.<br>
 
 ## 📈 Learning Progress<br>
 I have focused on building a strong foundation in JavaScript by:<br>
+- Manipulating the DOM to make pages interactive.<br>
+- Understanding how to write clean and reusable code.<br>
+- Implementing CSS for responsive and modern UI designs.<br>
