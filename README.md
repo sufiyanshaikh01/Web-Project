@@ -11,5 +11,8 @@ Welcome to my repository! I am currently learning **Web Development** and have s
 
 ### 1. 🪙 Currency Converter<br>
 A real-time currency conversion tool that fetches data from an API to provide accurate exchange rates.<br>
-
 * **Key Learning:** Learned how to use `fetch()` API, handle asynchronous JavaScript, and dynamically update the DOM with external data.<br>
+
+### 2. 🪨 Paper-Rock-Scissors<br>
+A fun, interactive version of the classic hand game. <br>
+* **Key Learning:** Practiced random number generation (`Math.random()`), conditional logic, and state management (score tracking).<br>
