@@ -26,3 +26,7 @@ I have focused on building a strong foundation in JavaScript by:<br>
 - Manipulating the DOM to make pages interactive.<br>
 - Understanding how to write clean and reusable code.<br>
 - Implementing CSS for responsive and modern UI designs.<br>
+
+## 📬 Connect With Me <br>
+I am passionate about building projects and solving problems through code. <br>
+- **GitHub:** [sufiyanshaikh01](https://github.com/sufiyanshaikh01)<br>
