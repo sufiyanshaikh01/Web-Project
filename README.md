@@ -30,3 +30,6 @@ I have focused on building a strong foundation in JavaScript by:<br>
 ## 📬 Connect With Me <br>
 I am passionate about building projects and solving problems through code. <br>
 - **GitHub:** [sufiyanshaikh01](https://github.com/sufiyanshaikh01)<br>
+
+<p align="center"><i>"Code is like humor. When you have to explain it, it’s bad."</i></p><br>
+<p align="center">Made with ❤️ by <b>Sufiyan Shaikh</b></p>
